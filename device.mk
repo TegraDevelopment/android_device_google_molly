@@ -65,6 +65,10 @@ PRODUCT_PACKAGES += \
     init.molly.usb.rc \
     ueventd.molly.rc
 
+# USB
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+    persist.sys.usb.config=mtp
+
 # Wi-Fi
 PRODUCT_PACKAGES += \
     dhcpcd.conf \
