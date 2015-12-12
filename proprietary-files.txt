@@ -84,9 +84,6 @@ lib/libtsec_wrapper.so
 lib/libtsechdcp.so
 lib/libtungsten_led.so
 -priv-app/AtvRemoteService/AtvRemoteService.apk
--priv-app/GamepadPairingService/GamepadPairingService.apk
--priv-app/GlobalKeyInterceptor/GlobalKeyInterceptor.apk
--priv-app/Overscan/Overscan.apk
 -priv-app/RemoteControlService/RemoteControlService.apk
 -priv-app/TV/TV.apk
 vendor/firmware/mrvl/sd8797_uapsta.bin
@@ -104,3 +101,8 @@ vendor/lib/mediadrm/libwvdrmengine.so|c080debc49adc8be1772186add89c1ff2ac009e5
 
 # Launcher - from Play Store
 -priv-app/LeanbackLauncher/LeanbackLauncher.apk|1cd711f8a2ca04098aeaf4ce17a6aa19eec69e1f
+
+# Remote Apps - from fugu 6.0.1 (MOB30W)
+-priv-app/GamepadPairingService/GamepadPairingService.apk|04ae277e6139a837bc7414a8b45d347a42808531
+-priv-app/GlobalKeyInterceptor/GlobalKeyInterceptor.apk|615eda09bff53ee0afacf94de66def8bedc16d3e
+-priv-app/Overscan/Overscan.apk|67de9f16dee572a512417152926f8ffed2d8c6c7
