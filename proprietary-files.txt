@@ -81,10 +81,10 @@ lib/libtsechdcp.so
 lib/libtungsten_led.so
 -priv-app/AtvRemoteService/AtvRemoteService.apk
 lib/libatv_uinputbridge.so:priv-app/AtvRemoteService/lib/arm/libatv_uinputbridge.so
--priv-app/GamepadPairingService/GamepadPairingService.apk
--priv-app/GlobalKeyInterceptor/GlobalKeyInterceptor.apk
+-priv-app/GamepadPairingService/GamepadPairingService.apk|04ae277e6139a837bc7414a8b45d347a42808531
+-priv-app/GlobalKeyInterceptor/GlobalKeyInterceptor.apk|615eda09bff53ee0afacf94de66def8bedc16d3e
 -priv-app/LeanbackLauncher/LeanbackLauncher.apk|1cd711f8a2ca04098aeaf4ce17a6aa19eec69e1f
--priv-app/Overscan/Overscan.apk
+-priv-app/Overscan/Overscan.apk|67de9f16dee572a512417152926f8ffed2d8c6c7
 -priv-app/RemoteControlService/RemoteControlService.apk
 -priv-app/TV/TV.apk
 vendor/firmware/mrvl/sd8797_uapsta.bin
