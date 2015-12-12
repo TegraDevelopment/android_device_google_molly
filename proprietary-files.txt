@@ -83,7 +83,7 @@ lib/libtungsten_led.so
 lib/libatv_uinputbridge.so:priv-app/AtvRemoteService/lib/arm/libatv_uinputbridge.so
 -priv-app/GamepadPairingService/GamepadPairingService.apk
 -priv-app/GlobalKeyInterceptor/GlobalKeyInterceptor.apk
--priv-app/LeanbackLauncher/LeanbackLauncher.apk
+-priv-app/LeanbackLauncher/LeanbackLauncher.apk|1cd711f8a2ca04098aeaf4ce17a6aa19eec69e1f
 -priv-app/Overscan/Overscan.apk
 -priv-app/RemoteControlService/RemoteControlService.apk
 -priv-app/TV/TV.apk
