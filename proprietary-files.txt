@@ -86,7 +86,6 @@ lib/libtungsten_led.so
 -priv-app/AtvRemoteService/AtvRemoteService.apk
 -priv-app/GamepadPairingService/GamepadPairingService.apk
 -priv-app/GlobalKeyInterceptor/GlobalKeyInterceptor.apk
--priv-app/LeanbackLauncher/LeanbackLauncher.apk
 -priv-app/Overscan/Overscan.apk
 -priv-app/RemoteControlService/RemoteControlService.apk
 -priv-app/TV/TV.apk
@@ -102,3 +101,6 @@ vendor/lib/libWVStreamControlAPI_L1.so|6b28492ac55b9a3d86993343cf2c8b55240b3420
 vendor/lib/libwvdrm_L1.so|3eaf8ed1cb337608a1ccdb80d2c95804e7aea323
 vendor/lib/libwvm.so|1efe6b18a8aaee269d2f8d89975023221fb71918
 vendor/lib/mediadrm/libwvdrmengine.so|c080debc49adc8be1772186add89c1ff2ac009e5
+
+# Launcher - from Play Store
+-priv-app/LeanbackLauncher/LeanbackLauncher.apk|1cd711f8a2ca04098aeaf4ce17a6aa19eec69e1f
