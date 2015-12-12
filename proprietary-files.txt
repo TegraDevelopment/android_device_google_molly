@@ -30,7 +30,7 @@ lib/libatv_uinputbridge.so
 lib/libaudioavp.so
 lib/libcgdrv.so
 lib/libcplconnectclient.so
-lib/libdrmdecrypt.so
+lib/libdrmdecrypt.so|2879996ba3415f68f637523d85b5b5fe61503558
 lib/libled_service_jni.so
 lib/libnvapputil.so
 lib/libnvavp.so
@@ -90,9 +90,9 @@ lib/libatv_uinputbridge.so:priv-app/AtvRemoteService/lib/arm/libatv_uinputbridge
 vendor/firmware/mrvl/sd8797_uapsta.bin
 vendor/firmware/mrvl/txpower_JP.bin
 vendor/firmware/mrvl/txpower_US.bin
-vendor/lib/drm/libdrmwvmplugin.so
-vendor/lib/libWVStreamControlAPI_L1.so
-vendor/lib/libwvdrm_L1.so
-vendor/lib/libwvm.so
+vendor/lib/drm/libdrmwvmplugin.so|6df52fb05bc826b8a61992a9488c8cbaf2dc66e7
+vendor/lib/libWVStreamControlAPI_L1.so|6b28492ac55b9a3d86993343cf2c8b55240b3420
+vendor/lib/libwvdrm_L1.so|3eaf8ed1cb337608a1ccdb80d2c95804e7aea323
+vendor/lib/libwvm.so|1efe6b18a8aaee269d2f8d89975023221fb71918
 vendor/lib/mediadrm/libDxModularPluginNv.so
-vendor/lib/mediadrm/libwvdrmengine.so
+vendor/lib/mediadrm/libwvdrmengine.so|c080debc49adc8be1772186add89c1ff2ac009e5
