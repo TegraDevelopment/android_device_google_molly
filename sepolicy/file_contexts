@@ -55,6 +55,7 @@
 # bt device
 /dev/ttyHS2					u:object_r:hci_attach_dev:s0
 /dev/hci_tty				u:object_r:hci_attach_dev:s0
+/dev/mbtchar0                           u:object_r:hci_attach_dev:s0
 
 # camera devices
 /dev/camera.pcl				u:object_r:camera_device:s0
