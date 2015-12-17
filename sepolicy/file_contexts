@@ -139,3 +139,6 @@
 
 # led
 /dev/led                                            u:object_r:led_device:s0
+
+# drm
+/data/DxDrm(/.*)?                                   u:object_r:drm_data_file:s0
