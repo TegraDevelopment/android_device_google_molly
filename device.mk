@@ -50,6 +50,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayouts/gpio-keypad.kcm:system/usr/keychars/gpio-keypad.kcm \
     $(LOCAL_PATH)/keylayouts/Vendor_2836_Product_0001.kl:system/usr/keylayout/Vendor_2836_Product_0001.kl
 
+# Power
+PRODUCT_PACKAGES += \
+    power.molly
+
 # System Properties
 -include $(LOCAL_PATH)/system_prop.mk
 
