@@ -1,4 +1,5 @@
 import init.molly.usb.rc
+import init.molly.led.rc
 
 on init
     # Support legacy paths
