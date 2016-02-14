@@ -88,6 +88,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     fstab.molly \
     init.molly.rc \
+    init.molly.led.rc \
     init.molly.usb.rc \
     ueventd.molly.rc
 
