@@ -102,7 +102,6 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 
 # Wi-Fi
 PRODUCT_PACKAGES += \
-    dhcpcd.conf \
     hostapd \
     libwpa_client \
     wpa_supplicant
