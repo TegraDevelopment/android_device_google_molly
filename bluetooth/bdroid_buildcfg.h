@@ -73,4 +73,7 @@
 // Change I/O capabilities to output only so pairing uses passkey instead of pin
 #define BTM_LOCAL_IO_CAPS BTM_IO_CAP_OUT
 
+/* Defined if the kernel does not have support for CLOCK_BOOTTIME_ALARM */
+#define KERNEL_MISSING_CLOCK_BOOTTIME_ALARM TRUE
+
 #endif
