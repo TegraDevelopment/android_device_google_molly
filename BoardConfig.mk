@@ -41,9 +41,6 @@ TARGET_BOOTLOADER_BOARD_NAME := molly
 TARGET_NO_BOOTLOADER := true
 TARGET_NO_RADIOIMAGE := true
 
-# Alphabetized as "D" for "Dlmalloc"
-# Use dlmalloc
-MALLOC_IMPL := dlmalloc
 
 # Graphics
 # CFLAGS: Disable Secure Discard
@@ -57,6 +54,9 @@ KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/arm/arm-ea
 KERNEL_TOOLCHAIN_PREFIX := arm-eabi-
 TARGET_KERNEL_CONFIG := molly_defconfig
 TARGET_KERNEL_SOURCE := kernel/google/molly
+
+# Malloc
+MALLOC_SVELTE := true
 
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 8388608
