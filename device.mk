@@ -50,10 +50,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 $(call inherit-product, frameworks/native/build/tablet-10in-xhdpi-2048-dalvik-heap.mk)
 
-# GL wrapper
-PRODUCT_PACKAGES += \
-    libeglm
-
 # Keylayouts
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayouts/ADT-1_Remote.kl:system/usr/keylayout/ADT-1_Remote.kl \
@@ -94,6 +90,11 @@ PRODUCT_PACKAGES += \
     init.molly.led.rc \
     init.molly.usb.rc \
     ueventd.molly.rc
+
+# Shims
+PRODUCT_PACKAGES += \
+    libeglm \
+    libshim_wvm
 
 # USB
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
