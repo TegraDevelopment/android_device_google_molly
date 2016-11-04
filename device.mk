@@ -45,10 +45,6 @@ PRODUCT_COPY_FILES += \
 # Dalvik
 $(call inherit-product, frameworks/native/build/tablet-10in-xhdpi-2048-dalvik-heap.mk)
 
-# GL wrapper
-PRODUCT_PACKAGES += \
-    libshim_egl
-
 # HWUI
 $(call inherit-product-if-exists, frameworks/native/build/phone-xxhdpi-2048-hwui-memory.mk)
 
@@ -91,6 +87,11 @@ PRODUCT_PACKAGES += \
     init.molly.led.rc \
     init.molly.usb.rc \
     ueventd.molly.rc
+
+# Shims
+PRODUCT_PACKAGES += \
+    libshim_egl \
+    libshim_wvm
 
 # USB
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \

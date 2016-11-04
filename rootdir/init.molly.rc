@@ -2,6 +2,8 @@ import init.molly.usb.rc
 import init.molly.led.rc
 
 on init
+    export LD_SHIM_LIBS "/system/vendor/lib/libwvm.so|libshim_wvm.so"
+
     # Support legacy paths
     symlink /sdcard /mnt/sdcard
     symlink /sdcard /storage/sdcard0
