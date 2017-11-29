@@ -14,3 +14,5 @@
 
 allow init self:capability { sys_module };
 allow init tmpfs:lnk_file create;
+allow init debugfs:dir mounton;
+allow init debugfs:file rw_file_perms;
