@@ -44,3 +44,5 @@ allow system_server fuse:dir search;
 # power hal access to dev/led
 allow system_server led_device:chr_file r_file_perms;
 
+# HWUI
+allow system_server hwui_prop:file r_file_perms;
