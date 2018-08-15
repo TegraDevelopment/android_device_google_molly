@@ -12,6 +12,9 @@ on post-fs
     # Enable mlan once /system/vendor/firmware is available
     write /sys/board_properties/mlan/enable 1
 
+    # Allow writing to the kernel trace log
+    chmod 0222 /sys/kernel/debug/tracing/trace_marker
+
 on post-fs-data
     mkdir /data/misc/camera 0770 media media
     mkdir /data/smc 0770 drmrpc drmrpc
