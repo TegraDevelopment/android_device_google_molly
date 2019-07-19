@@ -10,5 +10,9 @@
   {
     "repository": "LineageOS/android_hardware_nvidia_thermal",
     "target_path": "hardware/nvidia/thermal"
+  },
+  {
+    "repository": "LineageOS/android_kernel_google_molly",
+    "target_path": "kernel/google/molly"
   }
 ] 
