@@ -2,5 +2,9 @@
   {
     "repository": "LineageOS/android_hardware_marvell_wlan",
     "target_path": "hardware/marvell/wlan"
+  },
+  {
+    "repository": "LineageOS/android_kernel_google_molly",
+    "target_path": "kernel/google/molly"
   }
 ] 
