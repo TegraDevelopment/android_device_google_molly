@@ -20,7 +20,6 @@
 ![Google ADT-1](https://camo.githubusercontent.com/54227363384967f2a72989f45aeacc38d76aa59a/68747470733a2f2f7777772e636e782d736f6674776172652e636f6d2f77702d636f6e74656e742f75706c6f6164732f323031342f30362f4144542d315f414e64726f69645f54565f5265666572656e63655f44657369676e2e6a7067 "Google ADT-1")
  ## Copyright
  ```
-#
 # Copyright (C) 2020 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
