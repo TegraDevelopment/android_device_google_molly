@@ -1,0 +1,6 @@
+[
+  {
+    "repository": "LineageOS/android_hardware_marvell_wlan",
+    "target_path": "hardware/marvell/wlan"
+  }
+] 
