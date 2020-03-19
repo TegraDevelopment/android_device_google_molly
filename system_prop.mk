@@ -23,6 +23,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     drm.service.enabled=true \
     ro.com.widevine.cachesize=16777216
 
+# Bluetooth
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.bt.bdaddr_path=/persist/bt_mac.txt
+
 ## GL/GPU
 # Disable EGL_BUFFER_PRESERVED extension for OpenGLRenderer
 # Use glcomposer as the default compositor
