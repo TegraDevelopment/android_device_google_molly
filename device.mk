@@ -106,6 +106,7 @@ PRODUCT_PACKAGES += \
 # Ramdisk
 PRODUCT_PACKAGES += \
     fstab.molly \
+    init.comms.rc \
     init.molly.rc \
     init.molly.usb.rc \
     uevent.molly.rc
@@ -116,6 +117,12 @@ PRODUCT_PACKAGES += \
 # Thermal
 PRODUCT_PACKAGES += \
     thermal.tegra
+
+# Unified scaling
+PRODUCT_PACKAGES += \
+    init.ussrd.rc \
+    ussr_setup \
+    ussrd.conf
 
 # Wi-Fi
 PRODUCT_PACKAGES += \
