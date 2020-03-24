@@ -22,7 +22,7 @@ lib/hw/hdmi_cec.tegra4.so
 lib/hw/hwcomposer.tegra4.so
 lib/hw/keystore.molly.so
 lib/libDxDrmServer.so
-lib/libEGL_tegra_impl.so
+lib/libEGL_tegra_impl.so|6bec4112c4342bc8e961bc890cff5f098de1185c
 lib/libGLESv1_CM_tegra_impl.so
 lib/libGLESv2_tegra_impl.so
 lib/libardrv_dynamic.so
