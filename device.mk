@@ -45,6 +45,10 @@ PRODUCT_COPY_FILES += \
 # Dalvik
 $(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
 
+# GL wrapper
+PRODUCT_PACKAGES += \
+    libmhax
+
 # HWUI
 $(call inherit-product-if-exists, frameworks/native/build/phone-xxhdpi-2048-hwui-memory.mk)
 
