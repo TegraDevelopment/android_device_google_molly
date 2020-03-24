@@ -25,6 +25,7 @@ on early-boot
 
 on late-fs
     # Start services for bootanimation
+    start hwservicemanager
     start servicemanager
     start surfaceflinger
     start bootanim
