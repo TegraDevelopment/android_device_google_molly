@@ -57,4 +57,8 @@ extract "$MY_DIR"/proprietary-files.txt "$SRC" "$SECTION"
 
 BLOB_ROOT="$CM_ROOT"/vendor/"$VENDOR"/"$DEVICE"/proprietary
 
+# libEGL_tegra_impls.so changes to use libeglm.so
+sed -i 's/NvOsLibraryLoad/molly_m_libload/g' "${BLOB_ROOT}"/lib/libEGL_tegra_impl.so
+sed -i 's/libnvos\.so/libeglm.so/g' "${BLOB_ROOT}"/lib/libEGL_tegra_impl.so
+
 "$MY_DIR"/setup-makefiles.sh
