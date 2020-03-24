@@ -25,10 +25,14 @@ on early-boot
 
 on late-fs
     # Start services for bootanimation
-    start hwservicemanager
     start servicemanager
     start surfaceflinger
     start bootanim
+    # Make sure HW service manager started and start required HAL services
+    wait_for_prop hwservicemanager.ready true
+    start configstore-hal-1-0
+    start gralloc-2-0
+
     # Mount RW partitions which need run fsck
     mount_all /fstab.molly --late
 
@@ -148,6 +152,9 @@ on boot
 on fs
     mkdir /factory 0775 radio radio
     mount_all /fstab.molly --early
+
+    # Start HW service manager early
+    start hwservicemanager
 
     # Change ownership and permissions on /factory because mount is run as 
     # root + defaults
