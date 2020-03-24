@@ -22,6 +22,9 @@ $(call inherit-product, device/google/atv/products/atv_base.mk)
 # Inherit common Lineage configuration for tablets
 $(call inherit-product, vendor/cm/config/common_full_tv.mk)
 
+# Boot Animtion
+TARGET_BOOTANIMATION_HALF_RES := true
+
 # Boot Animation
 TARGET_SCREEN_HEIGHT := 1080
 TARGET_SCREEN_WIDTH := 1920
