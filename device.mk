@@ -13,6 +13,20 @@
 # limitations under the License.
 
 # Audio
+PRODUCT_PACKAGES += \
+    audio.a2dp.default \
+    audio.r_submix.default \
+    audio.usb.default \
+    libaudio-resampler \
+    libaudiospdif \
+    libstagefrighthw \
+    libtinyalsa \
+    libtinycompress \
+    tinycap \
+    tinymix \
+    tinyplay \
+    xaplay
+
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/audio_policy.conf:system/etc/audio_policy.conf
 
@@ -47,6 +61,16 @@ PRODUCT_COPY_FILES += \
 # System Properties
 -include $(LOCAL_PATH)/system_prop.mk
 
+# Thermal
+PRODUCT_PACKAGES += \
+    thermal.tegra
+
 # Wi-Fi
+PRODUCT_PACKAGES += \
+    libwpa_client \
+    hostapd \
+    dhcpcd.conf \
+    wpa_supplicant
+
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/wifi/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf
