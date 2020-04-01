@@ -58,8 +58,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.media.avsync=true
 
 ## Vendor SPL
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.lineage.build.vendor_security_patch=2015-02-04
+#PRODUCT_PROPERTY_OVERRIDES += \
+#    ro.lineage.build.vendor_security_patch=2015-02-04
 
 ## Wi-Fi
 PRODUCT_PROPERTY_OVERRIDES += \
