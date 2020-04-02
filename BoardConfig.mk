@@ -77,6 +77,9 @@ TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/fstab.molly
 # Seccomp
 BOARD_SECCOMP_POLICY := $(DEVICE_PATH)/seccomp
 
+# SELinux
+BOARD_SEPOLICY_DIRS := $(DEVICE_PATH)/sepolicy
+
 # Wi-Fi
 BOARD_HAVE_MARVELL_WIFI          := true
 BOARD_HOSTAPD_DRIVER             := NL80211
