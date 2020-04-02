@@ -56,6 +56,13 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     power.molly
 
+# Ramdisk
+PRODUCT_PACKAGES += \
+    fstab.molly \
+    init.molly.rc \
+    init.molly.usb.rc \
+    ueventd.molly.rc
+
 # System Properties
 -include $(LOCAL_PATH)/system_prop.mk
 
