@@ -33,7 +33,8 @@ TARGET_NO_BOOTLOADER := true
 
 # Graphics
 # CFLAGS: Disable Secure Discard
-COMMON_GLOBAL_CFLAGS += -DNO_SECURE_DISCARD
+# CFLAGS: Disable ashmem tracking to prevent GL crash
+COMMON_GLOBAL_CFLAGS += -DNO_SECURE_DISCARD -DDISABLE_ASHMEM_TRACKING
 USE_OPENGL_RENDERER := true
 
 # Partitions
