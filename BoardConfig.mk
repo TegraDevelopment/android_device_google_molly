@@ -37,6 +37,10 @@ TARGET_BOARD_PLATFORM := tegra4
 TARGET_BOOTLOADER_BOARD_NAME := molly
 TARGET_NO_BOOTLOADER := true
 
+# Alphabetized as "D" for "Dlmalloc"
+# Use dlmalloc
+MALLOC_IMPL := dlmalloc
+
 # Graphics
 # CFLAGS: Disable Secure Discard
 # CFLAGS: Disable ashmem tracking to prevent GL crash
