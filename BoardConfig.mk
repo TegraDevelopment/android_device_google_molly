@@ -34,6 +34,8 @@ TARGET_NO_BOOTLOADER := true
 TARGET_NO_RADIOIMAGE := true
 
 # Graphics
+# CFLAGS: Disable Secure Discard
+COMMON_GLOBAL_CFLAGS += -DNO_SECURE_DISCARD
 USE_OPENGL_RENDERER := true
 
 # Partitions
