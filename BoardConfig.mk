@@ -33,6 +33,9 @@ TARGET_BOOTLOADER_BOARD_NAME := molly
 TARGET_NO_BOOTLOADER := true
 TARGET_NO_RADIOIMAGE := true
 
+# dlmalloc
+MALLOC_IMPL := dlmalloc
+
 # Graphics
 # CFLAGS: Disable Secure Discard
 # CFLAGS: Disable ashmem tracking to prevent GL crash
