@@ -45,6 +45,7 @@ MALLOC_IMPL := dlmalloc
 # CFLAGS: Disable Secure Discard
 # CFLAGS: Disable ashmem tracking to prevent GL crash
 COMMON_GLOBAL_CFLAGS += -DNO_SECURE_DISCARD -DDISABLE_ASHMEM_TRACKING
+SF_VSYNC_EVENT_PHASE_OFFSET_NS := 1
 USE_OPENGL_RENDERER := true
 
 # Partitions
