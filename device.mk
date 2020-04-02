@@ -18,6 +18,9 @@ PRODUCT_COPY_FILES += \
 
 USE_CUSTOM_AUDIO_POLICY := 1
 
+# Characteristics
+PRODUCT_CHARACTERISTICS := nosdcard,tv
+
 # Codecs
 PRODUCT_COPY_FILES += \
     frameworks/av/media/libstagefright/data/media_codecs_google_audio.xml:system/etc/media_codecs_google_audio.xml \
