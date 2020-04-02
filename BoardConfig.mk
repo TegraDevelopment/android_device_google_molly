@@ -33,6 +33,8 @@ TARGET_BOOTLOADER_BOARD_NAME := molly
 TARGET_NO_BOOTLOADER := true
 
 # Graphics
+# CFLAGS: Disable Secure Discard
+COMMON_GLOBAL_CFLAGS += -DNO_SECURE_DISCARD
 USE_OPENGL_RENDERER := true
 
 # Partitions
