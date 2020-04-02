@@ -38,6 +38,10 @@ PRODUCT_COPY_FILES += \
 
 USE_CUSTOM_AUDIO_POLICY := 1
 
+# Bluetooth
+PRODUCT_PACKAGES += \
+    libbt-vendor
+
 # Characteristics
 PRODUCT_CHARACTERISTICS := nosdcard,tv
 
