@@ -23,6 +23,14 @@ on init
 on early-boot
     setprop ro.audio.flinger_standbytime_ms 15000
 
+on late-fs
+    # Start services for bootanimation
+    start servicemanager
+    start surfaceflinger
+    start bootanim
+    # Mount RW partitions which need run fsck
+    mount_all /fstab.molly --late
+
 on post-fs
     # Enable mlan once /system/vendor/firmware is available
     write /sys/board_properties/mlan/enable 1
@@ -138,7 +146,7 @@ on boot
 
 on fs
     mkdir /factory 0775 radio radio
-    mount_all /fstab.molly
+    mount_all /fstab.molly --early
 
     # Change ownership and permissions on /factory because mount is run as 
     # root + defaults
