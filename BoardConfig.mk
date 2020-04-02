@@ -36,6 +36,10 @@ BOARD_HAVE_BLUETOOTH_MRVL := true
 TARGET_BOARD_PLATFORM := tegra
 TARGET_NO_BOOTLOADER := true
 
+# Alphabetized as "D" for "Dlmalloc"
+# Use dlmalloc
+MALLOC_IMPL := dlmalloc
+
 # Graphics
 # CFLAGS: Disable Secure Discard
 # CFLAGS: Disable ashmem tracking to prevent GL crash
