@@ -112,7 +112,8 @@ void AudioOutput::setupInternal() {
         mBytesPerSample = 4;
         break;
     default:
-        LOG_ALWAYS_FATAL("Unexpected alsa format %d", mALSAFormat);
+        ALOGE("Unexpected alsa format %d, setting mBytesPerSample to 2", mALSAFormat);
+        mBytesPerSample = 2;
         break;
     }
 
@@ -197,7 +198,7 @@ void AudioOutput::openPCMDevice() {
     Mutex::Autolock _l(mDeviceLock);
     if (NULL == mDevice) {
         struct pcm_config config;
-        int dev_id = 0;
+        int dev_id = 3;
         int retry = 0;
         static const int MAX_RETRY_COUNT = 3;
 
@@ -423,7 +424,7 @@ void AudioOutput::doPCMWrite(const uint8_t* data, size_t len, audio_format_t for
     // involving the application level.  When this happens, the HDMI
     // audio device is put into the DISCONNECTED state, and calls to
     // write will return EBADFD.
-#if 1
+#if 0 // This used to be 1, but molly doesn't need the conversation because it natively supports 16bit PCM.
     /* Intel HDMI appears to be locked at 24bit PCM, but Android
      * will send data in the format specified in adev_open_output_stream().
      */
