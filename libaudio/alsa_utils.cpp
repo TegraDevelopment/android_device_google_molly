@@ -406,7 +406,7 @@ bool HDMIAudioCaps::supportsFormat(audio_format_t format,
         uint32_t subFormat = format & AUDIO_FORMAT_SUB_MASK;
         BPSMask bpsMask;
         switch (subFormat) {
-        // FIXME: (legacy code). We match on 16 bits, but on Fugu we hard code to use
+        // FIXME: (legacy code). We match on 16 bits, but on Molly we hard code to use
         // PCM_FORMAT_S24_LE.
             case AUDIO_FORMAT_PCM_SUB_16_BIT: // fall through
             case AUDIO_FORMAT_PCM_SUB_8_24_BIT: bpsMask = kBPS_16bit; break;

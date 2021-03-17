@@ -45,8 +45,8 @@ LOCAL_SHARED_LIBRARIES := \
     libaudioutils
 
 # until remotecontrolservice is added to PDK, don't include
-# this in aosp_fugu builds.  only use in regular fugu builds.
-ifeq ($(TARGET_PRODUCT),fugu)
+# this in aosp_molly builds.  only use in regular molly builds.
+ifeq ($(TARGET_PRODUCT),molly)
 LOCAL_C_INCLUDES += \
     vendor/google_athome/services/RemoteControlService/include
 
@@ -84,7 +84,7 @@ LOCAL_SHARED_LIBRARIES := \
     libmedia \
     libatv_audio
 
-LOCAL_MODULE := audio.primary.fugu
+LOCAL_MODULE := audio.primary.molly
 LOCAL_MODULE_PATH := $(TARGET_OUT_SHARED_LIBRARIES)/hw
 LOCAL_MODULE_TAGS := optional
 
@@ -114,7 +114,7 @@ LOCAL_C_INCLUDES := \
     $(TOPDIR)frameworks/av/services/audiopolicy/common/managerdefinitions/include \
     $(TOPDIR)frameworks/av/services/audiopolicy/engine/interface
 
-ifeq ($(TARGET_PRODUCT),fugu)
+ifeq ($(TARGET_PRODUCT),molly)
 LOCAL_C_INCLUDES += \
     vendor/google_athome/services/RemoteControlService/include
 
