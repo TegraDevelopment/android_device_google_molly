@@ -15,8 +15,10 @@
 # Audio
 PRODUCT_PACKAGES += \
     audio.a2dp.default \
+    audio.primary.molly \
     audio.r_submix.default \
     audio.usb.default \
+    libaudiopolicymanager \
     libtinyalsa
 
 PRODUCT_COPY_FILES += \

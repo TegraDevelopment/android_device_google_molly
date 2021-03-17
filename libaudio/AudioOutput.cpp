@@ -164,7 +164,7 @@ void AudioOutput::pushSilence(uint32_t nFrames)
 {
     if (nFrames == 0 || hasFatalError())
         return;
-    // choose 8_24_BIT instead of 16_BIT as it is native to Fugu
+    // choose 8_24_BIT instead of 16_BIT as it is native to Molly
     const audio_format_t format = AUDIO_FORMAT_PCM_8_24_BIT;
     const size_t frameSize = audio_bytes_per_sample(format) * mChannelCnt;
     const size_t writeSize = nFrames * frameSize;
@@ -428,7 +428,7 @@ void AudioOutput::doPCMWrite(const uint8_t* data, size_t len, audio_format_t for
      * will send data in the format specified in adev_open_output_stream().
      */
     LOG_ALWAYS_FATAL_IF(mALSAFormat != PCM_FORMAT_S24_LE,
-            "Fugu alsa device format(%d) must be PCM_FORMAT_S24_LE", mALSAFormat);
+            "Molly alsa device format(%d) must be PCM_FORMAT_S24_LE", mALSAFormat);
 
     int err = BAD_VALUE;
     switch(format) {
@@ -450,7 +450,7 @@ void AudioOutput::doPCMWrite(const uint8_t* data, size_t len, audio_format_t for
         err = pcm_write(mDevice, data, len);
         break;
     default:
-        LOG_ALWAYS_FATAL("Fugu input format(%#x) should be 16 bit or 8_24 bit pcm", format);
+        LOG_ALWAYS_FATAL("Molly input format(%#x) should be 16 bit or 8_24 bit pcm", format);
         break;
     }
 
