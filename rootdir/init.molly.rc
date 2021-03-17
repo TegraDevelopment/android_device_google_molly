@@ -5,9 +5,6 @@ on init
     symlink /sdcard /mnt/sdcard
     symlink /sdcard /storage/sdcard0
 
-on early-boot
-    setprop ro.audio.flinger_standbytime_ms 15000
-
 on post-fs
     # Enable mlan once /system/vendor/firmware is available
     write /sys/board_properties/mlan/enable 1
