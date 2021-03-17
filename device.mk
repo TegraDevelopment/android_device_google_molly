@@ -44,6 +44,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayouts/gpio-keypad.kl:system/usr/keylayout/gpio-keypad.kl \
     $(LOCAL_PATH)/keylayouts/Spike.kl:system/usr/keylayout/Spike.kl
 
+# Power
+PRODUCT_PACKAGES += \
+    power.molly
+
 # Wi-Fi
 PRODUCT_PACKAGES += \
     libwpa_client \
