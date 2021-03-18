@@ -33,6 +33,7 @@
 /dev/audio0_out_ctl       0660   media     root
 /dev/led                  0660   system    system
 /dev/mbtchar0             0660   system    bluetooth
+/dev/mfmchar0             0660   system    bluetooth
 
 # sys_data partition - The partition number here must be kept in sync
 # with the sys_data partition entry in the partition cfg file.
