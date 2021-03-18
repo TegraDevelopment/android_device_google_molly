@@ -128,6 +128,7 @@ on fs
 
     # Permissions for bluetooth
     setprop ro.bt.bdaddr_path "/sys/module/board_molly_mlan/parameters/btaddr"
+    chown bluetooth net_bt_stack /data/misc/bluetooth
     chmod 0660 /sys/class/rfkill/rfkill0/state
     chmod 0660 /sys/class/rfkill/rfkill0/type
     chown bluetooth net_bt_stack /sys/class/rfkill/rfkill0/state
