@@ -12,9 +12,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Filesystem type
-type ntfs, sdcard_type, fs_type, mlstrustedobject;
-
 # /sys/power/sysedp/...
 type sysfs_sysedp, fs_type, sysfs_type;
 
