@@ -46,7 +46,7 @@ LOCAL_SHARED_LIBRARIES := \
 
 # until remotecontrolservice is added to PDK, don't include
 # this in aosp_molly builds.  only use in regular molly builds.
-ifeq ($(TARGET_PRODUCT),molly)
+ifneq ($(filter molly molly_gmscore_next, $(TARGET_PRODUCT)),)
 LOCAL_C_INCLUDES += \
     vendor/google_athome/services/RemoteControlService/include
 
@@ -114,7 +114,7 @@ LOCAL_C_INCLUDES := \
     $(TOPDIR)frameworks/av/services/audiopolicy/common/managerdefinitions/include \
     $(TOPDIR)frameworks/av/services/audiopolicy/engine/interface
 
-ifeq ($(TARGET_PRODUCT),molly)
+ifneq ($(filter molly molly_gmscore_next, $(TARGET_PRODUCT)),)
 LOCAL_C_INCLUDES += \
     vendor/google_athome/services/RemoteControlService/include
 
