@@ -53,6 +53,7 @@ BOARD_WLAN_DEVICE                := mrvl
 BOARD_WPA_SUPPLICANT_DRIVER      := NL80211
 BOARD_WPA_SUPPLICANT_PRIVATE_LIB := lib_driver_cmd_mrvl
 WIFI_DRIVER_FW_PATH_AP           := "/vendor/firmware/mrvl/sd8797_uapsta.bin"
+WIFI_DRIVER_FW_PATH_PARAM        := "/dev/null"
 WIFI_DRIVER_FW_PATH_STA          := "/vendor/firmware/mrvl/sd8797_uapsta.bin"
 WPA_SUPPLICANT_VERSION           := VER_0_8_X
 
