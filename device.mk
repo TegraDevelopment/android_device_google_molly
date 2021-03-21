@@ -47,6 +47,12 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayouts/Spike.kl:system/usr/keylayout/Spike.kl
 
 # Wi-Fi
+PRODUCT_PACKAGES += \
+    dhcpcd.conf \
+    hostapd \
+    libwpa_client \
+    wpa_supplicant
+
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/wifi/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf \
     $(LOCAL_PATH)/wifi/wpa_supplicant_overlay.conf:system/etc/wifi/wpa_supplicant_overlay.conf
