@@ -22,3 +22,6 @@ allow platform_app video_device:chr_file { open read write ioctl };
 
 # com.nvidia.NvCPLSvc
 allow platform_app system_app_data_file:dir search;
+
+# GlobalKeyInterceptor
+allow platform_app throughput_device:chr_file rw_file_perms;
