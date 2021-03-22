@@ -59,3 +59,6 @@ ro.vold.wipe_on_crypt_fail=1
 
 ## Wi-Fi
 wifi.interface=wlan0
+
+# Debugging
+persist.sys.root_access=2
