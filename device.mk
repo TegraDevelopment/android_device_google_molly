@@ -88,6 +88,10 @@ PRODUCT_PACKAGES += \
     init.molly.usb.rc \
     ueventd.molly.rc
 
+# RemovePackages
+PRODUCT_PACKAGES += \
+    RemovePackages
+
 # Shims
 PRODUCT_PACKAGES += \
     libshim_egl \
