@@ -62,6 +62,7 @@ persist.tegra.nvmmlite=1
 ## Stagefright
 media.aac_51_output_enabled=true
 media.stagefright.cache-params=10240/20480/15
+media.stagefright.legacyencoder=true
 media.stagefright.less-secure=true
 persist.sys.media.avsync=true
 
