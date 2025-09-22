@@ -48,3 +48,8 @@ EOF
 
 # Finish
 write_footers
+
+# Mark LeanbackLauncher and TV as PRESIGNED
+MAKEFILE_ROOT="$CM_ROOT"/vendor/"$VENDOR"/"$DEVICE"
+sed -i '/LeanbackLauncher\/LeanbackLauncher.apk/{n;s/LOCAL_CERTIFICATE := platform/LOCAL_CERTIFICATE := PRESIGNED/}' "${MAKEFILE_ROOT}"/Android.mk
+sed -i '/TV\/TV.apk/{n;s/LOCAL_CERTIFICATE := platform/LOCAL_CERTIFICATE := PRESIGNED/}' "${MAKEFILE_ROOT}"/Android.mk
