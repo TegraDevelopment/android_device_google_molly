@@ -78,6 +78,3 @@ type sysfs_nvi2c, fs_type, sysfs_type, mlstrustedobject;
 # sys/power/tegra_rail_stats, /sys/kernel/tegra_cpu_volt_cap(/.*)?
 type sysfs_tegra_rail_stats, fs_type, sysfs_type;
 type sysfs_tegra_cpu_volt_cap, fs_type, sysfs_type;
-
-# Thermal
-type sysfs_thermal, sysfs_type, fs_type;
