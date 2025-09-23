@@ -53,3 +53,4 @@ write_footers
 MAKEFILE_ROOT="$CM_ROOT"/vendor/"$VENDOR"/"$DEVICE"
 sed -i '/LeanbackLauncher\/LeanbackLauncher.apk/{n;s/LOCAL_CERTIFICATE := platform/LOCAL_CERTIFICATE := PRESIGNED/}' "${MAKEFILE_ROOT}"/Android.mk
 sed -i '/TV\/TV.apk/{n;s/LOCAL_CERTIFICATE := platform/LOCAL_CERTIFICATE := PRESIGNED/}' "${MAKEFILE_ROOT}"/Android.mk
+find . -name "${MAKEFILE_ROOT}"/Android.mk -exec sed -i '/^LOCAL_MODULE_CLASS[[:space:]]*:= APPS/a LOCAL_DEX_PREOPT := false' {} +
